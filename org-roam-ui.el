@@ -655,7 +655,7 @@ Hides . directories."
   (interactive)
   (unless org-roam-ui-mode (org-roam-ui-mode))
   (funcall org-roam-ui-browser-function
-           (format "http://localhost:%d" org-roam-ui-port)))
+           (format "http://0.0.0.0:%d" org-roam-ui-port)))
 
 ;;;###autoload
 (defun org-roam-ui-node-zoom (&optional id speed padding)
