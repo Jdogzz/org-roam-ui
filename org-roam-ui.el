@@ -186,7 +186,6 @@ This serves the web-build and API over HTTP."
     (setq org-roam-ui-ws-server
           (websocket-server
            35903
-           :host "0.0.0.0"
            :on-open #'org-roam-ui--ws-on-open
            :on-message #'org-roam-ui--ws-on-message
            :on-close #'org-roam-ui--ws-on-close))
